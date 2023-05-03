@@ -12,11 +12,15 @@ l_1 = [1, 11, 14, 5, 8, 9]
 numbers = [l_1 for l_1 in range(1, 11)]
 
 
-def two_or_more_digits():
-    if len(str(num)) < 2:
-        numbers.remove(num)
-    print(numbers, l_1)
+def two_or_more_digits(my_list):
+    new_list = []
+    for l in my_list:
+        if l < 10:
+            new_list.append(l)
+    return new_list
 
+
+print(two_or_more_digits(l_1))
 
 # Exercise 2
 # Using list comprehension, create a list of names of 4 letters or more and capitalize each name
