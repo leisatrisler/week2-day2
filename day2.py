@@ -31,6 +31,14 @@ names1 = ['connor', 'connor', 'bob', 'connor',
 names2 = ['connor', 'connor', 'bob', 'connor', 'evan',
           'max', 'evan', 2, 2, 2, 3, 3, 4, 'bob', 'kevin']
 
+# Is this what you mean by list comprehension 
+#  This is what I read to understand, and I added line 37 below. What was I missing
+# https://www.programiz.com/python-programming/list-comprehension#:~:text=Points%20to%20Remember-,List%20comprehension%20is%20an%20elegant%20way%20to%20define%20and%20create,and%20loops%20for%20creating%20list.
+print([n.capitalize() for n in names1])
+
+names1 = [ n for n in ' ]
+print( h_letters)
+
 newlist = ['Evan', 'Connor', 'Kevin']
 for name in names1:
     if len(name) >= 4:
